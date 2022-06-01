@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
         <div className='relative'>
-          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[120px] h-[120px]   -top-[230px] lg:top-[10px] left-[120px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center overflow-hidden">
+          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[120px] h-[120px]   -top-[180px] lg:top-[10px] left-[120px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center overflow-hidden">
           </div>
         </div>
         <div className=' w-full'>
