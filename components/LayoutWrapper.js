@@ -19,7 +19,7 @@ const LayoutWrapper = ({ children }) => {
           {/* <nav className=" flex flex1  border-b flex-wrap justify-between cursor-pointer p-3 py-8 space-x-5 "> */}
 
           <Link href="/" passHref>
-            <h2 className="text-3xl cursor-pointer">einars <span className='border-b-2'>devBlog</span> </h2>
+            <h2 className="text-3xl cursor-pointer">Roliglek  </h2>
           </Link>
           <div className='flex space-x-4  text-xl'>
             <Link href="/bio" passHref>
