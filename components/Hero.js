@@ -1,11 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/Image'
+import Image from 'components/Image'
 import Link from '@/components/Link'
-import { SiGoogleads } from 'react-icons/si'
-import NewsletterForm from './NewsletterForm-d'
-import siteMetadata from '@/data/siteMetadata'
-import EmailCTA from './EmailCTA'
-import Blurry from './Blurry'
+
 
 
 
@@ -62,7 +58,7 @@ const Hero = () => {
         </div>
 
         <div className='relative'>
-          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[170px] h-[170px] -top-[230px] lg:top-[10px] left-[180px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center overflow-hidden">
+          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[120px] h-[120px]   -top-[230px] lg:top-[10px] left-[120px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center overflow-hidden">
           </div>
         </div>
         <div className=' w-full'>
