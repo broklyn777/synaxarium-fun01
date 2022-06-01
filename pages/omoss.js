@@ -1,4 +1,4 @@
-const Bio = () => {
+const Omoss = () => {
   return (
     <div className="mt-3">
       <p className="display-4 text-center">Fullstacker Einar</p>
@@ -8,4 +8,4 @@ const Bio = () => {
   )
 }
 
-export default Bio
+export default Omoss
