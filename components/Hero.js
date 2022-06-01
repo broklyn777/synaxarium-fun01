@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from '@/components/Image'
 import Link from '@/components/Link'
 import { SiGoogleads } from 'react-icons/si'
@@ -10,31 +11,30 @@ import EmailCTA from './EmailCTA'
 
 const Hero = () => {
   return (
-    <section className="grid border-b-2 lg:grid-rows-1 lg:grid-cols-2 items-center justify-between mt-20 min-w-screen">
+    <section className="grid  lg:grid-rows-1 lg:grid-cols-2 items-center justify-between mt-20 min-w-screen">
       <div className="flex flex-col items-start justify-center w-full h-full pr-8 mb-10 xl:mb-0">
         <div className="flex flex-col md:flex-row justify-start items-center">
-          <Image
-            src="/image/Bill_W.png"
-            alt="bild på einar "
-            className="border-2 border-gray-200 rounded-full w-32 h-32 shadow-md"
-            width={72}
-            height={72}
-            layout="fixed"
-            quality={60}
-            priority
-            loading="eager"
-          />
-          <h2 className="ml-2 text-3xl font-extrabold font-display leading-tight sm:text-4xl sm:leading-none md:text-5xl lg:text-5xl xl:text-6xl">
-            I´m a <span className='text-sky-500' >FullStack</span> pro
+
+          <h2 className="ml-2 text-4xl font-semibold font-display leading-tight sm:text-4xl sm:leading-none md:text-5xl lg:text-5xl xl:text-6xl">
+            Välkommen till en ny <span className='text-sky-500' > leksida!</span>
           </h2>
+          {/* <h2 className="ml-2 text-3xl font-extrabold font-display leading-tight sm:text-4xl sm:leading-none md:text-5xl lg:text-5xl xl:text-6xl">
+            Ha <span className='text-sky-500' >Roligt</span> pro
+          </h2> */}
         </div>
-        <p className="mt-2 text-lg ">
-          ...ett digitalt proffs som  skapar framtidens webbsidor och appar.        </p>
+        <div aria-hidden="true" className="absolute rounded-full -z-10 -top-[180px]   w-[412px] h-[412px] bg-red-200 grid place-items-center">
+        </div>
+        <div className='pl-4'>
+          <p className="mt-2 text-lg ">
+
+            Äntligen är sommaren här, och med den kommer möjligheten att vara ute en hel del! Varma dagar, och långa, ljusa kvällar gör att barnen kan leka ute mycket.
+          </p>
+        </div>
 
 
         <Link href="https://twitter.com">
           <a
-            className="my-3 font-bold text-sm leading-6 text-sky-500 hover:underline flex flex-row items-center"
+            className="my-3 font-bold text-md md:text-sm leading-6 text-sky-500 hover:underline flex flex-row items-center"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -53,8 +53,30 @@ const Hero = () => {
           </a>
         </Link>
       </div>
-      <EmailCTA />
 
+      <div className='relative'>
+        <div>
+          <div aria-hidden="true" className=" absolute rounded-full -z-20  w-[200px] h-[200px]   md:w-[500px] md:h-[500px] bg-green-200 grid overflow-hidden place-items-center">
+          </div>
+        </div>
+
+        <div className='relative'>
+          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[250px] h-[250px] -top-[150px] lg:top-[10px] left-[180px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center">
+          </div>
+        </div>
+
+        <Image
+          src="/image/roliglek-2205/undraw_winners.svg"
+          alt="bild på roliglek "
+          className=" "
+          width={400}
+          height={400}
+          layout="fixed"
+          quality={60}
+          priority
+          loading="eager"
+        />
+      </div>
 
 
 

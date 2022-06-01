@@ -8,10 +8,10 @@ const Hero = () => {
       <div className="flex flex-col items-start justify-center w-full h-full pr-8 mb-10 xl:mb-0">
         <div className="flex flex-col md:flex-row justify-start items-center">
           <Image
-            src="/image/Bill_W.png"
+            src="/image/barn-bollek.jpg"
             alt="bild på einar "
             className="border-2 border-gray-200 rounded-full w-32 h-32 shadow-md"
-            width={72}
+            width={120}
             height={72}
             layout="fixed"
             quality={60}
@@ -23,7 +23,9 @@ const Hero = () => {
           </h2>
         </div>
         <p className="mt-2 text-lg ">
-          ...ett digitalt proffs som  skapar framtidens webbsidor och appar.        </p>
+          ...
+          här finns lekar för alla tillfällen
+        </p>
 
 
         <Link href="https://twitter.com">

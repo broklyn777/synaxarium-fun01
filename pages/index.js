@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import Link from 'next/link'
 import Image from 'next/image'
 import Search from '@/components/Search'
-import Hero from '@/components/Hero'
+import Hero from 'components/Hero'
 
 const Home = ({ posts }) => {
   return (
@@ -13,7 +13,7 @@ const Home = ({ posts }) => {
       <Hero />
       {posts.map((post, index) => (
         <Link href={'/blog/' + post.slug} passHref key={index}>
-          <div className="card mb-3 cursor-pointer" style={{ maxWidth: '540px' }}>
+          <div className="card mb-3 mt-96 cursor-pointer" style={{ maxWidth: '540px' }}>
             <div className="row g-0">
               <div className="col-md-8">
                 <div className="card-body">
