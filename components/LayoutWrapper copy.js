@@ -6,28 +6,26 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
-import PageTitle from './PageTitle'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <div className="flex h-screen flex-col justify-between">
+      <div className="flex flex-col justify-between h-screen">
         <header className="flex items-center justify-between py-10">
           <div>
-            <Link href="/">
+
+            <Link href="/" aria-label="Tailwind CSS Blog">
               <div className="flex items-center justify-between">
-                {' '}
-                <h1 className='text-sky-400 text-4xl'>RoligLek</h1>
-                {/* <div className="mr-3">
+                <div className="mr-3">
                   <Logo />
-                </div> */}
-                {/* {typeof siteMetadata.headerTitle === 'string' ? (
+                </div>
+                {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
                   siteMetadata.headerTitle
-                )} */}
+                )}
               </div>
             </Link>
           </div>
@@ -37,7 +35,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
                 >
                   {link.title}
                 </Link>

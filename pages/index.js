@@ -4,13 +4,15 @@ import matter from 'gray-matter'
 import Link from 'next/link'
 import Image from 'next/image'
 import Search from '@/components/Search'
-import Hero from 'components/Hero'
+import Hero from '@/components/Hero'
+import { PageSEO } from '@/components/SEO'
 
 
 
 const Home = ({ posts }) => {
   return (
-    <div className="">
+
+    <>
 
       <Hero />
 
@@ -35,14 +37,13 @@ const Home = ({ posts }) => {
                   alt="thumbnail"
                   width={500}
                   height={400}
-                  objectFit="cover"
-                />
+                  objectFit="cover" />
               </div>
             </div>
           </div>
         </Link>
       ))}
-    </div>
+    </>
   )
 }
 

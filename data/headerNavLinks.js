@@ -1,8 +1,7 @@
 const headerNavLinks = [
-
-  { href: '/blogga', title: '/alla lekar' },
-  { href: '/tags', title: 'Tags' },
-  { href: '/', title: 'Hem' },
+  // { href: '/tags', title: 'Tags' },
+  // { href: '/', title: 'Hem' },
+  { href: '/blogga', title: 'Alla lekar' },
   { href: '/omoss', title: 'Om oss' },
 ]
 

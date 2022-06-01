@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'components/Image'
 import Link from '@/components/Link'
-import Blurry from './Blurry'
+
 
 
 
