@@ -6,11 +6,15 @@ import Image from 'next/image'
 import Search from '@/components/Search'
 import Hero from 'components/Hero'
 
+
+
 const Home = ({ posts }) => {
   return (
     <div className="">
 
       <Hero />
+
+
       {posts.map((post, index) => (
         <Link href={'/blog/' + post.slug} passHref key={index}>
           <div className="card mb-3 mt-96 cursor-pointer" style={{ maxWidth: '540px' }}>
