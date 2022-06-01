@@ -1,17 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from '@/components/Image'
+import Image from 'next/Image'
 import Link from '@/components/Link'
 import { SiGoogleads } from 'react-icons/si'
 import NewsletterForm from './NewsletterForm-d'
 import siteMetadata from '@/data/siteMetadata'
 import EmailCTA from './EmailCTA'
+import Blurry from './Blurry'
 
 
 
 
 const Hero = () => {
   return (
-    <section className="grid  lg:grid-rows-1 lg:grid-cols-2 items-center justify-between mt-20 min-w-screen">
+    <section className="grid  lg:grid-rows-1 lg:grid-cols-2 items-center justify-between mt-6 min-w-screen">
       <div className="flex flex-col items-start justify-center w-full h-full pr-8 mb-10 xl:mb-0">
         <div className="flex flex-col md:flex-row justify-start items-center">
 
@@ -22,7 +23,7 @@ const Hero = () => {
             Ha <span className='text-sky-500' >Roligt</span> pro
           </h2> */}
         </div>
-        <div aria-hidden="true" className="absolute rounded-full -z-10 -top-[180px]   w-[412px] h-[412px] bg-red-200 grid place-items-center">
+        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[120px]   w-[150px] h-[150px] lg:w-[350px] lg:-top-[160px] lg:h-[350px] bg-red-200 grid place-items-center">
         </div>
         <div className='pl-4'>
           <p className="mt-2 text-lg ">
@@ -61,21 +62,22 @@ const Hero = () => {
         </div>
 
         <div className='relative'>
-          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[250px] h-[250px] -top-[150px] lg:top-[10px] left-[180px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center">
+          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[170px] h-[170px] -top-[230px] lg:top-[10px] left-[180px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center overflow-hidden">
           </div>
         </div>
-
-        <Image
-          src="/image/roliglek-2205/undraw_winners.svg"
-          alt="bild på roliglek "
-          className=" "
-          width={400}
-          height={400}
-          layout="fixed"
-          quality={60}
-          priority
-          loading="eager"
-        />
+        <div className=' w-full'>
+          <Image
+            src="/image/roliglek-2205/undraw_winners.svg"
+            alt="bild på roliglek "
+            className=""
+            width={400}
+            height={400}
+            layout=""
+            quality={60}
+            priority
+            loading="eager"
+          />
+        </div>
       </div>
 
 
