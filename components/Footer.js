@@ -20,7 +20,9 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+          {/* <Link href="/">{siteMetadata.title}</Link> */}
+          <Link href="https://funfun01.vercel.app/">{siteMetadata.title}</Link>
+
         </div>
         <div className='flex flex-1'>
           <div className=" text-sm  text-gray-500 dark:text-gray-400">
