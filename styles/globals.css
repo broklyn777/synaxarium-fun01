@@ -43,11 +43,17 @@
 .bg-red-600 {
   background-color: #a70b34;
 }
-.bg-cyan-600 {
-  background-color: #0891B2 ;
+.bg-blue-800 {
+  background-color: #1E40AF ;
 }
 .bg-mdxYellow-600 {
   background-color: #fcb32c;
+}
+.bg-green-400 {
+  background-color: #4ADE80;
+}
+.bg-sky-600 {
+  background-color: #0284C7;
 }
 .bg-red-600 {
   background-color: #DC2626;

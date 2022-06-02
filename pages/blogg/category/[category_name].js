@@ -11,9 +11,11 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
     <Layout>
       <div className='flex justify-between'>
-        <div className='w-3/4 mr-10'>
-          <h1 className='text-5xl border-b-4 p-5 font-semibold'>
-            /artiklar om  <span className='text-primary-500' >{categoryName}</span>
+        <div className='md:w-3/4 md:mr-10'>
+          <h1 className='text-5xl  border-b-4 p-5 font-semibold'>
+            /<span className='text-gray-800' >{categoryName}
+              {/* /artiklar om  <span className='text-primary-500' >{categoryName} */}
+            </span>
           </h1>
 
           <div className='grid md:grid-cols-2  gap-5'>
@@ -23,7 +25,7 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
           </div>
         </div>
 
-        <div className='w-1/4'>
+        <div className='hidden md:block md:w-1/4'>
           <CategoryList categories={categories} />
         </div>
       </div>

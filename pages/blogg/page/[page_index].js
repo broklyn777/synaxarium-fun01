@@ -4,6 +4,7 @@ import Layout from '@/components/Layout'
 import Post from '@/components/Post'
 import Pagination from '@/components/Pagination'
 import CategoryList from '@/components/CategoryList'
+import CategoryListSm from '@/components/CategoryListSm'
 import { POSTS_PER_PAGE } from '@/config/index'
 import { getPosts } from '@/lib/posts'
 
@@ -13,9 +14,9 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
     //  ********* /blogga *********
 
     <Layout>
-      <div className='md:flex justify-between  md:flex-row'>
+      <div className='flex flex-col-reverse justify-between -mt-10 md:flex-row'>
         <div className='md:w-3/4 md:mr-10'>
-          <h1 className='text-5xl text-primary-500 border-b-4 p-5 font-semibold'>/blogg</h1>
+          <h1 className='hidden md:block text-5xl text-primary-500 border-b-4 p-5 font-semibold'>Alla lekar</h1>
 
 
           {/* ändrat från md:grid-cols-2   */}
@@ -28,8 +29,12 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
           <Pagination currentPage={currentPage} numPages={numPages} />
         </div>
 
-        <div className=' hidden md:flex w-1/4'>
+        <div className='hidden md:block w-full md:w-1/4'>
           <CategoryList categories={categories} />
+        </div>
+
+        <div className=' md:hidden  w-full'>
+          <CategoryListSm categories={categories} />
         </div>
       </div>
     </Layout>
