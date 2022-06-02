@@ -15,7 +15,7 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
     <Layout>
       <div className='md:flex justify-between  md:flex-row'>
         <div className='md:w-3/4 md:mr-10'>
-          <h1 className='text-5xl text-teal-500 border-b-4 p-5 font-semibold'>/blogg</h1>
+          <h1 className='text-5xl text-primary-500 border-b-4 p-5 font-semibold'>/blogg</h1>
 
 
           {/* ändrat från md:grid-cols-2   */}

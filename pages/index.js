@@ -7,7 +7,7 @@ import Search from '@/components/Search'
 import Hero from '@/components/Hero'
 import { PageSEO } from '@/components/SEO'
 
-
+//  blogslug
 
 const Home = ({ posts }) => {
   return (
@@ -18,7 +18,7 @@ const Home = ({ posts }) => {
 
 
       {posts.map((post, index) => (
-        <Link href={'/blog/' + post.slug} passHref key={index}>
+        <Link href={'/blogg/' + post.slug} passHref key={index}>
           <div className="card mb-3 mt-96 cursor-pointer" style={{ maxWidth: '540px' }}>
             <div className="row g-0">
               <div className="col-md-8">
