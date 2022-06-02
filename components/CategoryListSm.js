@@ -3,13 +3,13 @@ import Link from 'next/link'
 //  blogslug
 export default function CategoryListSm({ categories }) {
   return (
-    <div className=' w-full px-2 bg-white rounded-lg shadow-md mt-6'>
-      <h3 className='text-2xl text-center font-bold bg-gray-300 text-gray-700 py-3 rounded'>
+    <div className=' w-full p-2 bg-gray-100  rounded-lg mt-2'>
+      <h3 className='text-2xl text-center font-bold  text-gray-700  rounded'>
         Alla Kategorier/Tags
       </h3>
 
 
-      <div className='grid grid-cols-5 font-bold gap-x-1 gap-y-1 mt-4 px2 rounded text-center '>
+      <div className='grid grid-cols-4 font-bold gap-x-1 gap-y-1 mt-4 px-2 rounded text-center '>
         {categories.map((category, index) => (
 
           // eslint-disable-next-line @next/next/link-passhref

@@ -6,12 +6,17 @@ import Post from '@/components/Post'
 import CategoryList from '@/components/CategoryList'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
+import CategoryListSm from '@/components/CategoryListSm'
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
     <Layout>
       <div className='flex justify-between'>
-        <div className='md:w-3/4 md:mr-10'>
+
+        <div className='   md:w-3/4 md:mr-10'>
+          <div className='  md:hidden  w-full'>
+            <CategoryListSm categories={categories} />
+          </div>
           <h1 className='text-5xl  border-b-4 p-5 font-semibold'>
             /<span className='text-gray-800' >{categoryName}
               {/* /artiklar om  <span className='text-primary-500' >{categoryName} */}

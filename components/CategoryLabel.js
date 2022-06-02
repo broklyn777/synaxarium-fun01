@@ -2,12 +2,13 @@ import Link from 'next/link'
 
 export default function CategoryLabel({ children }) {
   const colorKey = {
+    Tailwind: 'red',
     Inne: 'yellow',
     Sommar: 'green',
     React: 'sky',
     Next: 'blue',
     MDX: 'mdxYellow',
-    Tailwind: 'red',
+
 
   }
 

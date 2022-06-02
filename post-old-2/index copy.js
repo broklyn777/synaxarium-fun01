@@ -15,7 +15,7 @@ export default function HomePage({ posts }) {
       </div>
 
       <Link href='/blog'>
-        <a className='block text-center border border-gray-500 bg-yellow-400 text-gray-800 rounded-md py-4 my-5 transition duration-500 ease select-none hover:text-white hover:bg-gray-900 focus:outline-none focus:shadow-outline w-full'>
+        <a className='block text-center border border-gray-500 bg-gray-200 text-gray-800 rounded-md py-4 my-5 transition duration-500 ease select-none hover:text-white hover:bg-gray-900 focus:outline-none focus:shadow-outline w-full'>
           Alla lekar
         </a>
       </Link>

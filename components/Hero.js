@@ -6,12 +6,11 @@ import Link from '@/components/Link'
 
 
 
-
 const Hero = () => {
   return (
     <section className="grid  lg:grid-rows-1 lg:grid-cols-2 items-center justify-between mt-6 min-w-screen">
       <div className="flex flex-col  justify-center w-full h-full md:pr-8 mb-10 xl:mb-0">
-        <div className="md:flex  md:flex-row items-center">
+        <div className="md:flex bg-gr  md:flex-row items-center">
 
           <h2 className="ml-2 text-center md:text-left text-4xl font-semibold font-display leading-tight sm:text-4xl sm:leading-none md:text-5xl lg:text-5xl xl:text-6xl">
             Välkommen <br /> till en ny leksida!
@@ -20,7 +19,9 @@ const Hero = () => {
             Ha <span className='text-sky-500' >Roligt</span> pro
           </h2> */}
         </div>
-        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[120px]   w-[150px] h-[150px] lg:w-[350px] lg:-top-[160px] lg:h-[350px] bg-red-200 grid place-items-center">
+        <div aria-hidden="true" className="absolute rounded-full -z-50 right-[50px] -top-[50px]    w-[220px] h-[220px] lg:w-[150px] lg:-top-[160px] lg:h-[150px] bg-pink-500 grid place-items-center">
+        </div>
+        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[120px]   w-[150px] h-[150px] lg:w-[350px] lg:-top-[160px] lg:h-[350px] bg-pink-500 grid place-items-center">
         </div>
         <div className='pl-4'>
           <p className="mt-2 text-center  text-lg md:text-left ">
@@ -56,15 +57,13 @@ const Hero = () => {
 
       <div className='relative'>
         <div>
-          <div aria-hidden="true" className=" absolute rounded-full -z-20  w-[200px] h-[200px]   md:w-[340px] md:h-[340px] bg-green-200 grid overflow-hidden place-items-center">
+          <div aria-hidden="true" className=" absolute rounded-full -z-30  w-[100px] h-[100px]   md:w-[340px] md:h-[340px] bg-pink-500 grid overflow-hidden place-items-center">
           </div>
         </div>
-        <div className='z-50'>
 
 
-        </div>
         <div className='relative'>
-          <div aria-hidden="true" className="absolute rounded-full -z-10  w-[120px] h-[120px]   -top-[180px] lg:top-[10px] left-[120px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-yellow-200 grid place-items-center overflow-hidden">
+          <div aria-hidden="true" className="absolute rounded-full -z-40  w-[120px] h-[120px]   -top-[220px] lg:top-[10px] right-[40px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-sky-500 grid place-items-center overflow-hidden">
           </div>
         </div>
         <div className=' w-full'>

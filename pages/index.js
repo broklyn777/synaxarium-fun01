@@ -26,7 +26,7 @@ export default function HomePage({ posts }) {
         </div>
         {/* blogslug */}
         <Link href='/blogg'>
-          <a className='block text-center border border-gray-500 bg-yellow-400 text-gray-800 rounded-md py-4 my-5 transition duration-500 ease select-none hover:text-white hover:bg-gray-900 focus:outline-none focus:shadow-outline w-full'>
+          <a className='block text-center bg-primary-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-pink-500  w-full'>
             Alla lekar
           </a>
         </Link>
