@@ -9,6 +9,9 @@ import { getPosts } from '@/lib/posts'
 
 export default function BlogPage({ posts, numPages, currentPage, categories }) {
   return (
+
+
+
     <Layout>
       <div className='flex justify-between flex-col md:flex-row'>
         <div className='w-3/4 mr-10'>
