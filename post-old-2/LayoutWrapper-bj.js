@@ -1,15 +1,15 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 // import Logo from '@/data/logo.svg'
-import Link from './Link'
-import SectionContainer from './SectionContainer'
-import Nav from './Nav'
-import Footer from './Footer'
-import Search from './Search'
+import Link from '../components/Link'
+import SectionContainer from '../components/SectionContainer'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+import Search from '../components/Search'
 // import Footer from './Footer'
 // import MobileNav from './MobileNav'
 // import ThemeSwitch from './ThemeSwitch'
-import MobileNav from './MobileNav'
+import MobileNav from '../components/MobileNav'
 
 const LayoutWrapper = ({ children }) => {
   return (

@@ -53,7 +53,7 @@ const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
                     <dt className="sr-only">Twitter</dt>
 
                     <dd>
-                      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sparrowhawk" className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">@einar_lofgren</a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com" className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">@einar_lofgren</a>
 
 
 

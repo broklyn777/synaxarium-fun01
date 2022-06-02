@@ -1,4 +1,4 @@
-import fs from 'fs'
+
 import path from 'path'
 import matter from 'gray-matter'
 import Link from 'next/link'
@@ -9,62 +9,37 @@ import { PageSEO } from '@/components/SEO'
 
 //  blogslug
 
-const Home = ({ posts }) => {
+import Layout from '@/components/Layout'
+import Post from '@/components/Post'
+import { getPosts } from '@/lib/posts'
+
+export default function HomePage({ posts }) {
   return (
-
     <>
+      <Hero /><Layout>
+        <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
 
-      <Hero />
-
-
-      {posts.map((post, index) => (
-        <Link href={'/blogg/' + post.slug} passHref key={index}>
-          <div className="card mb-3 mt-96 cursor-pointer" style={{ maxWidth: '540px' }}>
-            <div className="row g-0">
-              <div className="col-md-8">
-                <div className="card-body">
-                  <h5 className="card-title">{post.frontMatter.title}</h5>
-                  <p className="card-text">{post.frontMatter.description}</p>
-                  <p className="card-text">
-                    <small className="text-muted">{post.frontMatter.date}</small>
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-4 m-auto">
-                <Image
-                  src={post.frontMatter.thumbnailUrl}
-                  className="img-fluid mt-1 rounded-start"
-                  alt="thumbnail"
-                  width={500}
-                  height={400}
-                  objectFit="cover" />
-              </div>
-            </div>
-          </div>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
+          {posts.map((post, index) => (
+            <Post key={index} post={post} />
+          ))}
+        </div>
+        {/* blogslug */}
+        <Link href='/blogg'>
+          <a className='block text-center border border-gray-500 bg-yellow-400 text-gray-800 rounded-md py-4 my-5 transition duration-500 ease select-none hover:text-white hover:bg-gray-900 focus:outline-none focus:shadow-outline w-full'>
+            Alla lekar
+          </a>
         </Link>
-      ))}
+      </Layout>
+
     </>
   )
 }
 
-export const getStaticProps = async () => {
-  const files = fs.readdirSync(path.join('posts'))
-
-  const posts = files.map(filename => {
-    const markdownWithMeta = fs.readFileSync(path.join('posts', filename))
-    const { data: frontMatter } = matter(markdownWithMeta)
-
-    return {
-      frontMatter,
-      slug: filename.split('.')[0]
-    }
-  })
-
+export async function getStaticProps() {
   return {
     props: {
-      posts
-    }
+      posts: getPosts().slice(0, 6),
+    },
   }
 }
-
-export default Home

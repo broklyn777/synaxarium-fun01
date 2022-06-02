@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function CategoryLabel({ children }) {
   const colorKey = {
-    Inomhus: 'yellow',
+    Inne: 'yellow',
     CSS: 'blue',
     React: 'green',
     Next: 'cyan',

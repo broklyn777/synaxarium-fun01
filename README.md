@@ -3,4 +3,5 @@
 
 ## todo
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 5 på /hem
+category on top
