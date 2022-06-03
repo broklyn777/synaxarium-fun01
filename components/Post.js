@@ -33,11 +33,11 @@ export default function Post({ post, compact }) {
 
           <div className='mt-2'>
 
-            <a className='text-lg text-gray-700 font-semibold hover:underline decoration-primary-500'>
+            <h2 className='text-lg text-gray-700 font-semibold hover:underline decoration-primary-500'>
               {post.frontmatter.title}
-            </a>
+            </h2>
 
-            <p className=' leading-[18px] font-extralight text-gray-600'>{post.frontmatter.description}</p>
+            <p className=' leading-[16px] max-w-none text-[14px] font-normal text-gray-500'>{post.frontmatter.description}</p>
           </div>
 
         </div>
