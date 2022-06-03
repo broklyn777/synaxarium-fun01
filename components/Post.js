@@ -9,7 +9,7 @@ export default function Post({ post, compact }) {
     //  blogslug
     // ändrat bg-white
     <Link href={`/blogg/${post.slug}`} passHref>
-      <div className='w-full px-2 py-2 bg-gray-100 rounded-lg cursor-pointer shadow-md mt-6'>
+      <div className='w-full  bg-gray-100 rounded-lg cursor-pointer shadow-md mt-6'>
         {!compact && (
 
           // ändrat height width 420- 600, fanns ingen objectFit=""
@@ -23,36 +23,24 @@ export default function Post({ post, compact }) {
           />
         )}
 
+        <div className="pb-3 px-1" >
+          <div className='flex justify-between items-center tracking-tight'>
 
-        <div className='flex justify-between items-center'>
-
-          <CategoryLabel>{post.frontmatter.category}</CategoryLabel>
-        </div>
-
-
-
-        <div className='mt-2'>
-
-          <a className='text-lg text-gray-700 font-semibold hover:underline decoration-primary-500'>
-            {post.frontmatter.title}
-          </a>
-
-          <p className=' leading-[18px] font-thin text-gray-600'>{post.frontmatter.description}</p>
-        </div>
-
-        {/* {!compact && (
-          <div className='flex justify-between items-center mt-6'>
-
-
-
-            <div className='flex items-center'>
-
-              <h3 className='text-gray-700 '>
-                {post.frontmatter.author}
-              </h3>
-            </div>
+            <CategoryLabel>{post.frontmatter.category}</CategoryLabel>
           </div>
-        )} */}
+
+
+
+          <div className='mt-2'>
+
+            <a className='text-lg text-gray-700 font-semibold hover:underline decoration-primary-500'>
+              {post.frontmatter.title}
+            </a>
+
+            <p className=' leading-[18px] font-extralight text-gray-600'>{post.frontmatter.description}</p>
+          </div>
+
+        </div>
       </div>
     </Link>
 
