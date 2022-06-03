@@ -25,7 +25,7 @@ module.exports = {
   mode: "jit",
   theme: {
     screens: {
-      'xs': '420px',
+      'xs': '520px',
       // => @media (min-width: 640px) { ... }
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
