@@ -9,7 +9,7 @@ export default function Post({ post, compact }) {
     //  blogslug
     // ändrat bg-white
     <Link href={`/blogg/${post.slug}`} passHref>
-      <div className='w-full  bg-gray-100 rounded-lg cursor-pointer shadow-md mt-6'>
+      <div className='w-full bg-gray-100 rounded-lg cursor-pointer shadow-md mt-2'>
         {!compact && (
 
           // ändrat height width 420- 600, fanns ingen objectFit=""

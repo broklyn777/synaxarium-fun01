@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Header from './Header'
-import Nav from './Nav'
 // import Header from './Header'
 // import Search from './Search'
 
