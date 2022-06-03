@@ -25,7 +25,7 @@ module.exports = {
   mode: "jit",
   theme: {
     screens: {
-      'xs': '540px',
+      'xs': '420px',
       // => @media (min-width: 640px) { ... }
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -57,7 +57,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     screens: {
-      xs: '540px',
+      xs: '420px',
       ...defaultTheme.screens,
     },
     extend: {
