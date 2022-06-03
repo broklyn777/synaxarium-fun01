@@ -1,11 +1,20 @@
-const Omoss = () => {
+import Grid from '@/components/Grid'
+import Head from 'next/head'
+
+export default function omoss() {
   return (
-    <div className="mt-3">
-      <p className="display-4 text-center">Fullstacker Einar</p>
-      <p className="text-center">Om oss kommer här</p>
-    </div>
+
+    <><Head>
+      <title>Roliglek | Om oss</title>
+      <link rel="icon" href="/static/roliglek/2021/cropped-webbplatsikon-roliglek-150x150.png" />
+    </Head><Grid /></>
+
+
+
+
+
+
+
 
   )
 }
-
-export default Omoss

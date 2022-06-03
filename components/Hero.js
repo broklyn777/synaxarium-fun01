@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'components/Image'
 import Link from '@/components/Link'
+import Image from 'components/Image'
 
 
 
@@ -8,8 +8,10 @@ import Link from '@/components/Link'
 
 const Hero = () => {
   return (
-    <section className="grid  lg:grid-rows-1 lg:grid-cols-2 items-center justify-between mt-6 min-w-screen">
-      <div className="flex flex-col  justify-center w-full h-full md:pr-8 mb-10 xl:mb-0">
+
+
+    <section className="grid   lg:grid-rows-1 lg:grid-cols-2 items-center justify-between mt-6 min-w-screen">
+      <div className="flex flex-col   rounded-2xl  justify-center w-full h-full md:pr-8 mb-10 xl:mb-0">
         <div className="md:flex bg-gr  md:flex-row items-center">
 
           <h2 className="ml-2 text-center md:text-left text-4xl font-semibold font-display leading-tight sm:text-4xl sm:leading-none md:text-5xl lg:text-5xl xl:text-6xl">
@@ -28,31 +30,32 @@ const Hero = () => {
 
             Äntligen är sommaren här, och med den kommer möjligheten att vara ute en hel del! Varma dagar, och långa, ljusa kvällar gör att barnen kan leka ute mycket.
           </p>
+          <Link href="https://twitter.com">
+            <a
+              className="my-3 pl-4 font-bold text-md text-left md:text-sm leading-6 text-sky-500 hover:underline flex flex-row items-center"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                fill="currentColor"
+                stroke="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                className="w-4 h-4 mr-1"
+              >
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+              </svg>
+
+              ...vi sprider även gädje på twitter
+
+            </a>
+          </Link>
         </div>
 
 
-        <Link href="https://twitter.com">
-          <a
-            className="my-3 pl-4 font-bold text-md text-left md:text-sm leading-6 text-sky-500 hover:underline flex flex-row items-center"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <svg
-              fill="currentColor"
-              stroke="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              className="w-4 h-4 mr-1"
-            >
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-            </svg>
 
-            ...vi sprider även gädje på twitter
-
-          </a>
-        </Link>
       </div>
 
       <div className='relative'>

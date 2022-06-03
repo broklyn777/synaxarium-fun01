@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .square {
+    aspect-ratio: 1 / 1;
+  }
+}
 /* html, body, heading */
 @layer base {
   body {
-    @apply bg-[#ffffff] text-neutral-700
+    @apply bg-[#ffffff] text-neutral-700;
   }
-
-
 
   /* header {
     @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
@@ -21,7 +24,6 @@
     @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3];
   }
 }
-
 
 /* Fix category colors in production */
 .bg-yellow-600 {
@@ -44,18 +46,17 @@
   background-color: #a70b34;
 }
 .bg-blue-800 {
-  background-color: #1E40AF ;
+  background-color: #1e40af;
 }
 .bg-mdxYellow-600 {
   background-color: #fcb32c;
 }
 .bg-green-400 {
-  background-color: #4ADE80;
+  background-color: #4ade80;
 }
 .bg-sky-600 {
-  background-color: #0284C7;
+  background-color: #0284c7;
 }
 .bg-red-600 {
-  background-color: #DC2626;
+  background-color: #dc2626;
 }
-

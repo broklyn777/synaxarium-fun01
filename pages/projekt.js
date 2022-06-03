@@ -1,11 +1,7 @@
-import CategoryListSm from '@/components/CategoryListSm'
-
 import React from 'react'
 
-const projekt = () => {
+export default function projekt() {
     return (
-        <h1>Projekt</h1>
+        <div>projekt</div>
     )
 }
-
-export default projekt
