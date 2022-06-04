@@ -1,10 +1,10 @@
 // import { MDXProvider } from '@mdx-js/react'
-import { ThemeProvider } from 'next-themes'
-import '../styles/globals.css'
-// import Nav from '../components/Nav'
-import Head from 'next/head'
 // import Layout from '@/components/Layout'
+
 import LayoutWrapper from '@/components/LayoutWrapper'
+import { ThemeProvider } from 'next-themes'
+import Head from 'next/head'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
         </Head>
+
 
         <LayoutWrapper>
           <Component {...pageProps} />

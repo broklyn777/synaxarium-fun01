@@ -3,8 +3,8 @@ import Link from 'next/link'
 //  blogslug
 export default function CategoryListSm({ categories }) {
   return (
-    <div className=' w-full p-2 bg-gray-100  rounded-lg mt-2'>
-      <h3 className='text-2xl text-center font-bold  text-gray-700  rounded'>
+    <div className=' w-full p-2 border-y-2    mt-2'>
+      <h3 className='text-2xl text-center font-bold pt-2  text-gray-700  rounded'>
         Alla Kategorier/Tags
       </h3>
 
@@ -13,7 +13,7 @@ export default function CategoryListSm({ categories }) {
         {categories.map((category, index) => (
 
           // eslint-disable-next-line @next/next/link-passhref
-          <Link key={index} href={`/blogg/category/${category.toLowerCase()}`}>
+          <Link key={index} href={`/lek/category/${category.toLowerCase()}`}>
             <li className='list-none px-0 py-1 bg-pink-500 text-white rounded-md cursor-pointer hover:bg-primary-500'>{category}</li>
 
           </Link>

@@ -1,16 +1,18 @@
-import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-
-import Link from './Link'
-import SectionContainer from './SectionContainer'
+import siteMetadata from '@/data/siteMetadata'
 import Footer from './Footer'
+import Link from './Link'
 import MobileNav from './MobileNav'
+import SectionContainer from './SectionContainer'
+import { PageSEO } from './SEO'
+
 
 // import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
+      <PageSEO />
       <div className="flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between py-10">
           <div>

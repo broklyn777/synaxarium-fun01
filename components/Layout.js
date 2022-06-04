@@ -6,10 +6,11 @@ export default function Layout({ title, keywords, description, children }) {
   return (
     <div>
       <Head>
-        <title>{title}</title>
-        <meta name='keywords' content={keywords} />
-        <meta name='description' content={description} />
-        <link rel='icon' href='/favicon.ico' />
+        <title>Roliglek | Pyssel</title>
+        <meta
+          name="description"
+          content="Lekar, Pyssel, tävling, bus"
+        />
       </Head>
 
 
@@ -19,8 +20,4 @@ export default function Layout({ title, keywords, description, children }) {
   )
 }
 
-Layout.defaultProps = {
-  title: 'Välkommen till Roliglek.se',
-  keywords: 'lek, pyssel,ha roligt',
-  description: 'hitta lekar för alla tillfällen',
-}
+

@@ -8,7 +8,7 @@ export default function Post({ post, compact }) {
 
     //  blogslug
     // ändrat bg-white
-    <Link href={`/blogg/${post.slug}`} passHref>
+    <Link href={`/lek/${post.slug}`} passHref>
       <div className='w-full bg-gray-100 pt-0 border-b-2 border-pink-400 cursor-pointer shadow-md mt-2'>
         {!compact && (
 

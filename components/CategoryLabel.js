@@ -18,7 +18,7 @@ export default function CategoryLabel({ children }) {
       className={`px-2 py-1 bg-${colorKey[children]}-600 text-gray-100 font-semibold rounded`}
     >
 
-      <Link href={`/blogg/category/${children.toLowerCase()}`}>{children}</Link>
+      <Link href={`/lek/category/${children.toLowerCase()}`}>{children}</Link>
     </div>
   )
 }

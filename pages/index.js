@@ -19,7 +19,7 @@ export default function HomePage({ posts }) {
           ))}
         </div>
         {/* blogslug */}
-        <Link href='/blogg'>
+        <Link href='/lek'>
           <a className='block text-center bg-primary-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-pink-500  w-full'>
             Alla lekar
           </a>

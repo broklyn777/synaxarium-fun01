@@ -1,11 +1,9 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import Link from 'next/link'
-import Image from 'next/image'
-import Search from '@/components/Search'
 import Hero from '@/components/Hero'
-import { PageSEO } from '@/components/SEO'
+import fs from 'fs'
+import matter from 'gray-matter'
+import Image from 'next/image'
+import Link from 'next/link'
+import path from 'path'
 
 //  blogslug
 
@@ -18,7 +16,7 @@ const Home = ({ posts }) => {
 
 
       {posts.map((post, index) => (
-        <Link href={'/blogg/' + post.slug} passHref key={index}>
+        <Link href={'/lek/' + post.slug} passHref key={index}>
           <div className="card mb-3 mt-96 cursor-pointer" style={{ maxWidth: '540px' }}>
             <div className="row g-0">
               <div className="col-md-8">

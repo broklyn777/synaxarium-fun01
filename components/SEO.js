@@ -1,6 +1,6 @@
+import siteMetadata from '@/data/siteMetadata'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import siteMetadata from '@/data/siteMetadata'
 
 const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl }) => {
   const router = useRouter()
@@ -82,8 +82,8 @@ export const BlogSEO = ({
   canonicalUrl,
 }) => {
   const router = useRouter()
-  const publishedAt = new Date(date).toISOString()
-  const modifiedAt = new Date(lastmod || date).toISOString()
+  // const publishedAt = new Date(date).toISOString()
+  // const modifiedAt = new Date(lastmod || date).toISOString()
   let imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]
@@ -122,8 +122,8 @@ export const BlogSEO = ({
     },
     headline: title,
     image: featuredImages,
-    datePublished: publishedAt,
-    dateModified: modifiedAt,
+    // datePublished: publishedAt,
+    // dateModified: modifiedAt,
     author: authorList,
     publisher: {
       '@type': 'Organization',
