@@ -19,22 +19,9 @@ export default function CategoryListSm({ categories }) {
           </Link>
         ))}
       </div>
-      {/* <ul className='divide-y divide-gray-300'>
-        {categories.map((category, index) => (
 
-          // eslint-disable-next-line @next/next/link-passhref
-          <Link key={index} href={`/blogg/category/${category.toLowerCase()}`}>
-            <li className='p-4 cursor-pointer hover:bg-gray-50'>{category}</li>
-
-          </Link>
-        ))}
-      </ul> */}
     </div>
   )
 }
 
-// <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
-//   {posts.map((post, index) => (
-//     <Post key={index} post={post} />
-//   ))}
-// </div>
+

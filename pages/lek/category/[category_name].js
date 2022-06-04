@@ -1,12 +1,11 @@
-import fs from 'fs'
-import path from 'path'
-import Link from 'next/link'
+import CategoryList from '@/components/CategoryList'
+import CategoryListSm from '@/components/CategoryListSm'
 import Layout from '@/components/Layout'
 import Post from '@/components/Post'
-import CategoryList from '@/components/CategoryList'
-import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
-import CategoryListSm from '@/components/CategoryListSm'
+import fs from 'fs'
+import matter from 'gray-matter'
+import path from 'path'
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
@@ -84,3 +83,4 @@ export async function getStaticProps({ params: { category_name } }) {
     },
   }
 }
+// tolowercase

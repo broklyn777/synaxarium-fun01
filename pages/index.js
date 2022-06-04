@@ -2,6 +2,7 @@
 import Hero from '@/components/Hero'
 //  blogslug
 import Layout from '@/components/Layout'
+import NewsletterForm from '@/components/NewsletterForm'
 import Post from '@/components/Post'
 import { getPosts } from '@/lib/posts'
 import Link from 'next/link'
@@ -10,7 +11,9 @@ import Link from 'next/link'
 export default function HomePage({ posts }) {
   return (
     <>
-      <Hero /><Layout>
+      <Hero />
+      <NewsletterForm />
+      <Layout>
         <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
 
         <div className='grid md:grid-cols-2  lg:grid-cols-3 md:gap-5'>
@@ -24,6 +27,7 @@ export default function HomePage({ posts }) {
             Alla lekar
           </a>
         </Link>
+
       </Layout>
 
     </>

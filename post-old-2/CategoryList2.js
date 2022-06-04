@@ -17,3 +17,4 @@ export default function CategoryList({ categories }) {
     </div>
   )
 }
+//toLowerCase

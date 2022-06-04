@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import fs from 'fs'
-import path from 'path'
 import matter from 'gray-matter'
+import path from 'path'
 
 export default (req, res) => {
     let posts
