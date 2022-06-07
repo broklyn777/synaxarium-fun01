@@ -4,7 +4,7 @@ const headerNavLinks = [
   // { href: '/', title: 'Hem' },
   { href: '/lek', title: 'Alla lekar' },
   // { href: '/blogga', title: 'Alla lekar' },
-  { href: '/projekt', title: 'Projekt' },
+  // { href: '/projekt', title: 'Projekt' },
   { href: '/omoss', title: 'Om oss' },
 ]
 

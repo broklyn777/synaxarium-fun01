@@ -6,8 +6,8 @@ export default function CategoryLabel({ children }) {
     Inne: 'yellow',
     Sommar: 'green',
     React: 'sky',
-    Next: 'blue',
-    MDX: 'mdxYellow',
+    Ute: 'blue',
+    Lära: 'mdxYellow',
 
 
   }

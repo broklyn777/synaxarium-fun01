@@ -61,7 +61,7 @@ const NewsletterForm = ({ title = 'Prenumerera på nyhetsbrevet' }) => {
             type="submit"
             disabled={subscribed}
           >
-            {subscribed ? 'Thank you!' : 'Sign up'}
+            {subscribed ? 'Thank you!' : 'Skicka'}
           </button>
         </div>
       </form>
