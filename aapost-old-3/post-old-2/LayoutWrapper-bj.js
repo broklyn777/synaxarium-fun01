@@ -1,15 +1,11 @@
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
+import Footer from '../../components/Footer'
 // import Logo from '@/data/logo.svg'
-import Link from '../components/Link'
-import SectionContainer from '../components/SectionContainer'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
-import Search from '../components/Search'
+import Link from '../../components/Link'
 // import Footer from './Footer'
 // import MobileNav from './MobileNav'
 // import ThemeSwitch from './ThemeSwitch'
-import MobileNav from '../components/MobileNav'
+import MobileNav from '../../components/MobileNav'
+import SectionContainer from '../../components/SectionContainer'
 
 const LayoutWrapper = ({ children }) => {
   return (

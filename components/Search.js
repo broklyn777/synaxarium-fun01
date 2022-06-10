@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 // import SearchResults from './SearchResults'
 
@@ -14,7 +14,7 @@ export default function Search() {
         const res = await fetch(`/api/search?q=${searchTerm}`)
         const { results } = await res.json()
 
-        // console.log(results);
+
         setSearchResults(results)
       }
     }

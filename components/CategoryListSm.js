@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 //  blogslug
 export default function CategoryListSm({ categories }) {
+  // console.log(categories)
   return (
     <div className=' w-full p-2 border-y-2    mt-2'>
       <h3 className='text-2xl text-center font-bold pt-2  text-gray-700  rounded'>

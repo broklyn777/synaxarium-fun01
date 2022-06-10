@@ -16,6 +16,7 @@ import SectionContainer from '../../components/SectionContainer'
 const components = { Nav, Button, SyntaxHighlighter }
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 const PostPage = ({ frontMatter: { title, description, date }, mdxSource }) => {
+
   return (
     <>
       <NextSeo

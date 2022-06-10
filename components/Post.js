@@ -4,6 +4,7 @@ import Link from 'next/link'
 import CategoryLabel from './CategoryLabel'
 
 export default function Post({ post, compact }) {
+  // console.log(post)
   return (
 
     //  blogslug

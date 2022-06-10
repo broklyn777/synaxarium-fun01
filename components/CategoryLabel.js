@@ -1,13 +1,15 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function CategoryLabel({ children }) {
   const colorKey = {
-    Tailwind: 'red',
+    Alla: 'red',
     Inne: 'yellow',
     Sommar: 'green',
-    React: 'sky',
+    Många: 'sky',
     Ute: 'blue',
     Lära: 'mdxYellow',
+    Femkamp: 'lime',
+    Rörelse: 'lime',
 
 
   }

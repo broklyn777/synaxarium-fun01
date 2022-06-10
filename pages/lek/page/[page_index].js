@@ -9,6 +9,7 @@ import fs from 'fs'
 import path from 'path'
 
 export default function BlogPage({ posts, numPages, currentPage, categories }) {
+  // console.log(posts)
   return (
 
     //  ********* /blogga *********
