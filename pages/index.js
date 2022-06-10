@@ -15,7 +15,7 @@ export default function HomePage({ posts }) {
       <Hero />
       <NewsletterForm />
       <section className='grid'>
-        <div className='grid px-2 grid-cols-2'>
+        <div className=' px-2 md:grid md:grid-cols-2'>
           <div className='p-1'>
             <FunPlayer url="https://www.youtube.com/watch?v=z9Eo8gFOMp0" />
           </div>

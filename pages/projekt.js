@@ -18,7 +18,9 @@ export default function Projekt() {
             <h1 className=' hidden md:block text-5xl text-primary-500 border-b-4 p-5 font-semibold'>Projekt</h1>
 
             <FunPlayer url="https://www.youtube.com/watch?v=z9Eo8gFOMp0" />
+
             <FunPlayer url="https://www.youtube.com/watch?v=sNFteclBopw" />
+            <FunPlayer url="https://youtu.be/lCra8jUrlUQ" />
 
 
 
