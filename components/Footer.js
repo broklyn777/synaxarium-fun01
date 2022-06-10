@@ -25,14 +25,14 @@ export default function Footer() {
         </div>
         <div className='flex flex-1'>
           <div className=" text-sm  text-gray-500 dark:text-gray-400">
-            <Link href="https://github.com/broklyn777/einar-devblog">
+            <Link href="">
               devBlog github  |
             </Link>
           </div>
           <div>{`  `}</div>
           <div className=" text-sm px-2 text-gray-500 dark:text-gray-400">
-            <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-              Tims Starter theme  |
+            <Link href="">
+              FunFun |
             </Link>
           </div>
           <div>{`  `}</div>
