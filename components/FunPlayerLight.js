@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player";
 
-const FunPlayer = ({ url }) => {
+const FunPlayerLight = ({ url }) => {
     return (
         <div className="relative mt-4 pt-[56.25%]">
             <ReactPlayer
@@ -12,9 +12,9 @@ const FunPlayer = ({ url }) => {
                 controls={true}
                 muted={true}
                 playing={true}
-
+                light={true}
             />
         </div>
     );
 };
-export default FunPlayer;
+export default FunPlayerLight;

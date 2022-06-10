@@ -1,8 +1,7 @@
 
-import FunPlayer from '@/components/FunPlayer';
+import FunPlayerLight from '@/components/FunPlayerLight';
 import Head from 'next/head';
 import React from 'react';
-
 
 
 
@@ -18,10 +17,10 @@ export default function Projekt() {
             </Head>
             <h1 className=' hidden md:block text-5xl text-primary-500 border-b-4 p-5 font-semibold'>Projekt</h1>
 
-            <FunPlayer url="https://www.youtube.com/watch?v=z9Eo8gFOMp0" />
+            <FunPlayerLight url="https://www.youtube.com/watch?v=z9Eo8gFOMp0" />
 
-            <FunPlayer url="https://www.youtube.com/watch?v=sNFteclBopw" />
-            <FunPlayer url="https://youtu.be/lCra8jUrlUQ" />
+            <FunPlayerLight url="https://www.youtube.com/watch?v=sNFteclBopw" />
+            <FunPlayerLight url="https://youtu.be/lCra8jUrlUQ" />
 
 
 
