@@ -5,9 +5,11 @@ export default function CategoryListSm({ categories }) {
   // console.log(categories)
   return (
     <div className=' w-full p-2 border-y-2    mt-2'>
-      <h1 className='text-3xl text-center font-bold pt-2  text-primary-500  rounded'>
-        Alla lekar
-      </h1>
+      <Link href="/lek" passHref>
+        <h1 className='text-3xl text-center font-bold pt-2  text-primary-500  rounded'>
+          Alla lekar
+        </h1>
+      </Link>
 
 
       <div className='grid grid-cols-4 font-bold gap-x-1 gap-y-1 mt-4 px-2 rounded text-center '>
