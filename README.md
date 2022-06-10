@@ -1,5 +1,7 @@
 #### funfun v.001
 
+hitta platsen last 1.
+
 ## todo
 
 fixa footer

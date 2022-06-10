@@ -1,13 +1,56 @@
-import { NextSeo } from 'next-seo';
+import ResponsivePlayer from '@/components/ResponsivePlayer'
+import Head from 'next/head'
+import React from 'react'
 
-const Page = () => (
-    <>
-        <NextSeo
-            title="Simple Usage Example"
-            description="A short description goes here."
-        />
-        <p>Simple Usage</p>
-    </>
-);
 
-export default Page;
+
+export default function Projekt() {
+    return (
+
+        <>
+
+            <Head>
+                <title>Roliglek | Projekt</title>
+                <link rel="icon" href="/static/roliglek/2021/cropped-webbplatsikon-roliglek-150x150.png" />
+            </Head>
+            <h1 className=' hidden md:block text-5xl text-primary-500 border-b-4 p-5 font-semibold'>Projekt</h1>
+            {/* <div className='relative mt-4 pt-[56.25%]'>
+                <ReactPlayer
+                    className="absolute top-0 left-0"
+                    url='https://youtu.be/lCra8jUrlUQ'
+                    width="100%"
+                    height="100%"
+                    loop
+                />
+            </div> */}
+            <ResponsivePlayer url="https://youtu.be/lCra8jUrlUQ?t" />
+            {/* <ReactPlayer url='https://youtu.be/lCra8jUrlUQ'
+
+            /> */}
+            <div className="prose lg:prose-xl">
+                <h1>Hur gör man en Tonfisksallad med ägg - (Recept - God och Låg kalori)</h1>
+                <p>
+                    For years parents have espoused the health benefits of eating garlic bread with cheese to their
+                    children, with the food earning such an iconic status in our culture that kids will often dress
+                    up as warm, cheesy loaf for Halloween.
+                </p>
+                <p>
+                    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+                    springing up around the country.
+                </p>
+
+            </div>
+
+
+        </>
+
+
+
+
+
+
+
+
+    )
+}
+
