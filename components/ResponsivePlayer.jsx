@@ -11,6 +11,7 @@ const ResponsivePlayer = ({ url }) => {
         loop={true}
         controls={true}
         muted={true}
+        playing={true}
       />
     </div>
   );

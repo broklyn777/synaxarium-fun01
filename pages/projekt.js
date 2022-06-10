@@ -1,6 +1,6 @@
-import ResponsivePlayer from '@/components/ResponsivePlayer'
-import Head from 'next/head'
-import React from 'react'
+import ResponsivePlayer from '@/components/ResponsivePlayer';
+import Head from 'next/head';
+import React from 'react';
 
 
 
@@ -14,19 +14,12 @@ export default function Projekt() {
                 <link rel="icon" href="/static/roliglek/2021/cropped-webbplatsikon-roliglek-150x150.png" />
             </Head>
             <h1 className=' hidden md:block text-5xl text-primary-500 border-b-4 p-5 font-semibold'>Projekt</h1>
-            {/* <div className='relative mt-4 pt-[56.25%]'>
-                <ReactPlayer
-                    className="absolute top-0 left-0"
-                    url='https://youtu.be/lCra8jUrlUQ'
-                    width="100%"
-                    height="100%"
-                    loop
-                />
-            </div> */}
-            <ResponsivePlayer url="https://youtu.be/lCra8jUrlUQ?t" />
-            {/* <ReactPlayer url='https://youtu.be/lCra8jUrlUQ'
 
-            /> */}
+
+            {/* <Lesson /> */}
+            <ResponsivePlayer url="https://youtu.be/sNFteclBopw?t" />
+            <ResponsivePlayer url="https://youtu.be/z9Eo8gFOMp0" />
+
             <div className="prose lg:prose-xl">
                 <h1>Hur gör man en Tonfisksallad med ägg - (Recept - God och Låg kalori)</h1>
                 <p>
