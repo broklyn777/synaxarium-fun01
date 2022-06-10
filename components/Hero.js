@@ -21,10 +21,9 @@ const Hero = () => {
             Ha <span className='text-sky-500' >Roligt</span> pro
           </h2> */}
         </div>
-        <div aria-hidden="true" className="absolute rounded-full -z-50 right-[50px] -top-[50px]    w-[220px] h-[220px] lg:w-[150px] lg:-top-[160px] lg:h-[150px] bg-pink-500 grid place-items-center">
-        </div>
-        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[120px]   w-[150px] h-[150px] lg:w-[350px] lg:-top-[160px] lg:h-[350px] bg-pink-500 grid place-items-center">
-        </div>
+        {/* <div aria-hidden="true" className="absolute rounded-full -z-50 right-[50px] -top-[50px]    w-[100px] h-[220px] lg:w-[150px] lg:-top-[160px] lg:h-[150px] bg-green-500 grid place-items-center">
+        </div> */}
+
         <div className='pl-4'>
           <p className="mt-2 text-center  text-lg md:text-left ">
 
@@ -32,7 +31,7 @@ const Hero = () => {
           </p>
           <Link href="https://twitter.com">
             <a
-              className="my-3 pl-4 font-bold text-md text-left md:text-sm leading-6 text-sky-500 hover:underline flex flex-row items-center"
+              className="my-3 pl-4 font-bold text-md text-left md:text-sm leading-6 text-green-500 hover:underline flex flex-row items-center"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -59,16 +58,17 @@ const Hero = () => {
       </div>
 
       <div className='relative'>
-        <div>
-          <div aria-hidden="true" className=" absolute rounded-full -z-30  w-[100px] h-[100px]   md:w-[340px] md:h-[340px] bg-pink-500 grid overflow-hidden place-items-center">
-          </div>
+
+        <div aria-hidden="true" className=" absolute rounded-full -z-30  w-[100px] h-[100px]   md:w-[270px] md:h-[270px] bg-sky-500  overflow-hidden place-items-center">
+        </div>
+
+        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[10px] w-[120px] h-[120px] lg:w-[150px] md:-[340px] right-[100px] md:right-[140px]  lg:right-[240px] lg:top-[100px] lg:h-[150px] bg-pink-500  place-items-center">
         </div>
 
 
-        <div className='relative'>
-          <div aria-hidden="true" className="absolute rounded-full -z-40  w-[120px] h-[120px]   -top-[220px] lg:top-[10px] right-[40px] lg:-left-[280px]   md:w-[300px] md:h-[300px] bg-sky-500 grid place-items-center overflow-hidden">
-          </div>
+        <div aria-hidden="true" className="absolute rounded-full -z-40  w-[120px] h-[120px]   -top-[220px] lg:top-[10px] right-[40px] lg:-left-[280px]   md:w-[200px] md:h-[200px] bg-sky-500  place-items-center overflow-hidden">
         </div>
+
         <div className=' w-full'>
           <Image
             src="/image/roliglek-2205/undraw_winners.svg"
