@@ -1,4 +1,5 @@
 
+import FunPlayer from '@/components/FunPlayer'
 import Hero from '@/components/Hero'
 //  blogslug
 import Layout from '@/components/Layout'
@@ -13,6 +14,18 @@ export default function HomePage({ posts }) {
     <>
       <Hero />
       <NewsletterForm />
+      <section className='grid'>
+        <div className='grid px-2 grid-cols-2'>
+          <div className='p-1'>
+            <FunPlayer url="https://www.youtube.com/watch?v=z9Eo8gFOMp0" />
+          </div>
+          <div className='p-1'>
+            <FunPlayer url="https://www.youtube.com/watch?v=sNFteclBopw" />
+          </div>
+
+        </div>
+
+      </section>
       <Layout>
         <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
 
