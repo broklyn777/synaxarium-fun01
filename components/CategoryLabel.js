@@ -8,7 +8,7 @@ export default function CategoryLabel({ children }) {
     Många: 'sky',
     Ute: 'blue',
     Lära: 'mdxYellow',
-    Femkamp: 'lime',
+    Leta: 'fuchsia',
     Rörelse: 'lime',
 
 

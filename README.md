@@ -2,6 +2,8 @@
 
 ## todo
 
+fixa footer
+
 ~~const MAX_DISPLAY = 5 på /hem~~
 ~~category on top~~
 
