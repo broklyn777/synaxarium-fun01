@@ -1,6 +1,8 @@
-import ResponsivePlayer from '@/components/ResponsivePlayer';
+
+import FunPlayer from '@/components/FunPlayer';
 import Head from 'next/head';
 import React from 'react';
+
 
 
 
@@ -15,10 +17,9 @@ export default function Projekt() {
             </Head>
             <h1 className=' hidden md:block text-5xl text-primary-500 border-b-4 p-5 font-semibold'>Projekt</h1>
 
+            <FunPlayer url="https://www.youtube.com/watch?v=z9Eo8gFOMp0" />
+            <FunPlayer url="https://www.youtube.com/watch?v=sNFteclBopw" />
 
-            {/* <Lesson /> */}
-            <ResponsivePlayer url="https://youtu.be/sNFteclBopw?t" />
-            <ResponsivePlayer url="https://youtu.be/z9Eo8gFOMp0" />
 
 
             <div className="prose lg:prose-xl">
