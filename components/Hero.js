@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
           <Link href="https://twitter.com">
             <a
-              className="my-3 pl-4 font-bold text-md text-left md:text-sm leading-6 text-green-500 hover:underline flex flex-row items-center"
+              className="my-3 pl-4 font-bold text-md text-left md:text-sm leading-6 text-sky-500 hover:underline flex flex-row items-center"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -66,7 +66,7 @@ const Hero = () => {
         </div>
 
 
-        <div aria-hidden="true" className="absolute rounded-full -z-40  w-[120px] h-[120px]   -top-[220px] lg:top-[10px] right-[40px] lg:-left-[280px]   md:w-[200px] md:h-[200px] bg-sky-500  place-items-center overflow-hidden">
+        <div aria-hidden="true" className="absolute rounded-full -z-40  w-[120px] h-[120px]   -top-[220px] lg:top-[10px] right-[40px] lg:-left-[280px]   md:w-[200px] md:h-[200px] bg-sky-300  place-items-center overflow-hidden">
         </div>
 
         <div className=' w-full'>

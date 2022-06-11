@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'en sida om roliga lekar att lära',
   language: 'sv', //ändrat
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.youtube.com/',
+  siteUrl: 'https://funfun01.vercel.app/',
   siteRepo: 'https://www.youtube.com/',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
