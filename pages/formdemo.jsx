@@ -1,15 +1,23 @@
 /* eslint-disable @next/next/no-sync-scripts */
 /* eslint-disable react/no-unknown-property */
+import Form02 from "@/components/form02";
+import Form03 from "@/components/form03";
 import React from "react";
 
 const formdemo = () => {
   return (
     <>
-      <h1>formdemo</h1>
+      <h1 className="text-6xl">HFormside</h1>
+
+      <Form03 />
+
+      <h2>form2</h2>
+      <Form02 />
+      {/* <h1 className="text-5xl text-red-600 ">formdemo</h1>
       <script src="https://f.convertkit.com/ckjs/ck.5.js" />
       <form
         action="https://app.convertkit.com/forms/3344817/subscriptions"
-        className="seva-form formkit-form"
+        className=""
         method="post"
         data-sv-form="3344817"
         data-uid="a6b548ef5b"
@@ -29,7 +37,7 @@ const formdemo = () => {
               data-element="errors"
               data-group="alert"
             ></ul>
-            <div data-element="fields" className="seva-fields formkit-fields">
+            <div data-element="fields" className="">
               <div className="formkit-field">
                 <input
                   className="formkit-input"
@@ -58,7 +66,7 @@ const formdemo = () => {
             <div className="formkit-powered-by-convertkit-container"></div>
           </div>
         </div>
-      </form>
+      </form> */}
     </>
   );
 };

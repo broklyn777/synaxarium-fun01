@@ -1,8 +1,8 @@
 
+import Form03 from '@/components/form03'
 import Hero from '@/components/Hero'
 //  blogslug
 import Layout from '@/components/Layout'
-import NewsletterForm from '@/components/NewsletterForm'
 import Post from '@/components/Post'
 import { getPosts } from '@/lib/posts'
 import Link from 'next/link'
@@ -12,11 +12,11 @@ export default function HomePage({ posts }) {
   return (
     <>
       <Hero />
-      <NewsletterForm />
-      <div className='h-5'>
-        <script async data-uid="cb203ab160" src="https://successful-producer-6718.ck.page/cb203ab160/index.js"></script>
-
+      <div className="flex items-center justify-center pt-4">
+        <Form03 />
       </div>
+
+
 
       <Layout>
         <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>

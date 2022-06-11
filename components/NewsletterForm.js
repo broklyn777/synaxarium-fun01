@@ -40,7 +40,7 @@ const NewsletterForm = ({ title = 'Prenumerera på nyhetsbrevet' }) => {
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
         <div>
           <label className="sr-only" htmlFor="email-input">
-            E-post addres
+            E-post address
           </label>
           <input
             autoComplete="email"
