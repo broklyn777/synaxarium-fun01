@@ -59,10 +59,10 @@ const Hero = () => {
 
       <div className='relative'>
 
-        <div aria-hidden="true" className=" absolute rounded-full -z-30  w-[100px] h-[100px]   md:w-[270px] md:h-[270px] bg-sky-500  overflow-hidden place-items-center">
+        <div aria-hidden="true" className=" absolute rounded-full -z-30  w-[160px] h-[160px]   md:w-[270px] md:h-[270px] bg-green-500  overflow-hidden place-items-center">
         </div>
 
-        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[10px] w-[120px] h-[120px] lg:w-[150px] md:-[340px] right-[100px] md:right-[140px]  lg:right-[240px] lg:top-[100px] lg:h-[150px] bg-pink-500  place-items-center">
+        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[10px] w-[120px] h-[120px] lg:w-[150px] md:-[340px] right-[40px] md:right-[140px]  lg:right-[240px] lg:top-[100px] lg:h-[150px] bg-pink-500  place-items-center">
         </div>
 
 

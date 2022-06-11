@@ -4,7 +4,7 @@ import Link from 'next/link'
 import CategoryLabel from './CategoryLabel'
 
 export default function Post({ post, compact }) {
-  // console.log(post)
+  // console.log(post) bra console
   return (
 
     //  blogslug
@@ -17,7 +17,7 @@ export default function Post({ post, compact }) {
           <Image
             src={post.frontmatter.thumbnailUrl}
             alt=''
-            height={250}
+            height={300}
             width={500}
             className='mb-4 rounded-t-md'
             objectFit="cover"

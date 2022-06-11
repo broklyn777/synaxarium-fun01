@@ -6,7 +6,7 @@ const headerNavLinks = [
   // { href: '/blogga', title: 'Alla lekar' },
   { href: '/projekt', title: 'Projekt' },
   { href: '/projekt-light', title: 'ProjektLight' },
-  { href: '/omoss', title: 'Om oss' },
+  { href: '/om-oss', title: 'Om oss' },
 ]
 
 export default headerNavLinks

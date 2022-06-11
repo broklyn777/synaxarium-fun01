@@ -6,7 +6,7 @@ export default function CategoryListSm({ categories }) {
   return (
     <div className=' w-full p-2 border-y-2    mt-2'>
       <Link href="/lek" passHref>
-        <h1 className='text-3xl text-center font-bold pt-2  text-primary-500  rounded'>
+        <h1 className='text-3xl text-center  font-bold pt-2 cursor-pointer  text-primary-500  rounded'>
           Alla lekar
         </h1>
       </Link>

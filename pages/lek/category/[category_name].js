@@ -8,6 +8,7 @@ import matter from 'gray-matter'
 import path from 'path'
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
+  console.log(categories)
   return (
     <Layout>
       <div className='flex justify-between'>
@@ -17,7 +18,8 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
             <CategoryListSm categories={categories} />
           </div>
           <h1 className='text-5xl  border-b-4 p-5 font-semibold'>
-            /<span className='text-gray-800' >{categoryName}
+            {/* slash deleted */}
+            <span className='text-gray-800' >{categoryName}
               {/* /artiklar om  <span className='text-primary-500' >{categoryName} */}
             </span>
           </h1>
