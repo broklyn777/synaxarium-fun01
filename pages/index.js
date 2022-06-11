@@ -13,6 +13,10 @@ export default function HomePage({ posts }) {
     <>
       <Hero />
       <NewsletterForm />
+      <div className='h-5'>
+        <script async data-uid="cb203ab160" src="https://successful-producer-6718.ck.page/cb203ab160/index.js"></script>
+
+      </div>
 
       <Layout>
         <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
