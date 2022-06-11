@@ -8,7 +8,7 @@ import matter from 'gray-matter'
 import path from 'path'
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
-  console.log(categories)
+  // console.log(categories)
   return (
     <Layout>
       <div className='flex justify-between'>
