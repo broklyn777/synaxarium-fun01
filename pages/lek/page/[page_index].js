@@ -20,10 +20,10 @@ export default function BlogPage({ posts, title, description, numPages, currentP
 
       <SectionContainer>
         <Layout>
-
-          <div className='flex flex-col-reverse justify-between -mt-10 md:flex-row'>
+          <h1 className=' md:block text-5xl text-gray-700 border-b-4 p-5 font-semibold'>Alla lekar</h1>
+          <div className='flex flex-col-reverse justify-between mt-10 md:flex-row'>
             <div className='md:w-3/4 md:mr-10'>
-              <h1 className=' hidden md:block text-5xl text-primary-500 border-b-4 p-5 font-semibold'>Alla lekar</h1>
+
 
 
               {/* ändrat från md:grid-cols-2   */}

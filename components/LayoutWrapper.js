@@ -1,5 +1,4 @@
 import headerNavLinks from '@/data/headerNavLinks'
-import siteMetadata from '@/data/siteMetadata'
 import Footer from './Footer'
 import Link from './Link'
 import MobileNav from './MobileNav'
@@ -26,15 +25,22 @@ const LayoutWrapper = ({ children }) => {
 
                   {/* <Logo /> */}
                 </div>
-                <h2 className=' sm:hidden pl-5 font-semibold text-sky-500 text-4xl'>RoligLek</h2>
+                <h2 className='pl-5 font-semibold text-sky-500 text-4xl'>Rolig
+                  <span className='text-pink-500'>L</span>
+                  <span className='text-yellow-500'>e</span>
+                  <span className='text-green-500'>k</span>
 
+
+
+                </h2>
+                {/* 
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-3xl text-sky-500 font-semibold sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
                   siteMetadata.headerTitle
-                )}
+                )} */}
               </div>
             </Link>
           </div>

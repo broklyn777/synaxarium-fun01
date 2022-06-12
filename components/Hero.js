@@ -59,14 +59,14 @@ const Hero = () => {
 
       <div className='relative'>
 
-        <div aria-hidden="true" className=" absolute rounded-full -z-30  w-[160px] h-[160px]   md:w-[270px] md:h-[270px] bg-green-500  overflow-hidden place-items-center">
+        <div aria-hidden="true" className=" absolute rounded-full -z-30  w-[160px] h-[160px]   md:w-[270px] md:h-[270px] bg-green-200  overflow-hidden place-items-center">
         </div>
 
-        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[10px] w-[120px] h-[120px] lg:w-[150px] md:-[340px] right-[40px] md:right-[140px]  lg:right-[240px] lg:top-[100px] lg:h-[150px] bg-pink-500  place-items-center">
+        <div aria-hidden="true" className="absolute rounded-full -z-10 top-[10px] w-[120px] h-[120px] lg:w-[150px] md:-[340px] right-[40px] md:right-[140px]  lg:right-[240px] lg:top-[100px] lg:h-[150px] bg-pink-200  place-items-center">
         </div>
 
 
-        <div aria-hidden="true" className="absolute rounded-full -z-40  w-[120px] h-[120px]   -top-[220px] lg:top-[10px] right-[40px] lg:-left-[280px]   md:w-[200px] md:h-[200px] bg-sky-300  place-items-center overflow-hidden">
+        <div aria-hidden="true" className="absolute rounded-full -z-40  w-[120px] h-[120px]   -top-[220px] lg:top-[10px] right-[40px] lg:-left-[280px]   md:w-[200px] md:h-[200px] bg-sky-200  place-items-center overflow-hidden">
         </div>
 
         <div className=' w-full'>

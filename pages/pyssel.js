@@ -1,21 +1,26 @@
 import Card from '@/components/Card'
+import Layout from '@/components/Layout'
 import SectionContainer from '@/components/SectionContainer'
-import { PageSEO } from '@/components/SEO'
 import projectsData from '@/data/projectsData'
-import siteMetadata from '@/data/siteMetadata'
+import Head from 'next/head'
 
 export default function Projects() {
   return (
     <>
+
+
+      <Head>
+        <title>Roliglek | Pyssel</title>
+        <link rel="icon" href="/static/roliglek/2021/cropped-webbplatsikon-roliglek-150x150.png" />
+      </Head>
       <SectionContainer>
-        <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
-        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <Layout>
+          <h1 className=' md:block text-5xl text-gray-700 border-b-4 p-5 font-semibold'>Pyssel</h1>
+
           <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Pyssel
-            </h1>
+
             <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-              {/* Showcase your projects with a hero image (16 x 9) */}
+              På Pysselugglan hittar du massor av pyssel för olika åldrar. Beskrivningarna innehåller instruktioner steg- för steg och illustrativa bilder så att du enkelt kan skapa din egen kreation
             </p>
           </div>
           <div className="container py-12">
@@ -31,7 +36,8 @@ export default function Projects() {
               ))}
             </div>
           </div>
-        </div>
+
+        </Layout>
       </SectionContainer>
     </>
   )
