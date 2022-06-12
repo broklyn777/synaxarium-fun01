@@ -1,4 +1,5 @@
 
+import CardPyssel from '@/components/CardPyssel'
 import Form03 from '@/components/form03'
 import Hero from '@/components/Hero'
 //  blogslug
@@ -16,11 +17,8 @@ export default function HomePage({ posts }) {
         <Form03 />
       </div>
 
-      <Link href='/static/roliglek/pyssel/paper-doll-chain-sjojungfrur.pdf'>
-        <a target="_blank" rel="noopener noreferrer" className='block text-center bg-primary-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-pink-500  w-full'>
-          Veckans PDF
-        </a>
-      </Link>
+
+
 
 
       <Layout>
@@ -37,7 +35,13 @@ export default function HomePage({ posts }) {
             Alla lekar
           </a>
         </Link>
-
+        <Link href='/static/roliglek/pyssel/paper-doll-chain-sjojungfrur.pdf'>
+          <a target="_blank" rel="noopener noreferrer" className='block text-center bg-pink-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-sky-500  w-full'>
+            Veckans PDF
+          </a>
+        </Link>
+        <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste pyssel</h1>
+        <CardPyssel />
       </Layout>
 
     </>

@@ -7,7 +7,7 @@ const headerNavLinks = [
   { href: '/projekt', title: 'Projekt' },
   // { href: '/projekt-light', title: 'ProjektLight' },
   { href: '/om-oss', title: 'Om oss' },
-  { href: '/projects', title: 'Projekt2' },
+  // { href: '/projects', title: 'Projekt2' },
 ]
 
 export default headerNavLinks
