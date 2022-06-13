@@ -14,11 +14,16 @@ export default function HomePage({ posts }) {
   return (
     <>
       <Hero />
-      <div className="flex items-center justify-center pt-4">
-        <Form03 />
-      </div>
 
       <Layout>
+        <div className='sm:px-14 sm:py-8'>
+          <div className=" items-center justify-center bg-gray-100 p-6 w-96 mx-auto  ">
+
+            <Form03 />
+
+
+          </div>
+        </div>
         <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
 
         <div className='grid md:grid-cols-2  lg:grid-cols-3 md:gap-5'>
@@ -28,12 +33,12 @@ export default function HomePage({ posts }) {
         </div>
         {/* blogslug */}
         <Link href='/lek'>
-          <a className='block text-center bg-primary-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-pink-500  w-full'>
+          <a className='block text-center bg-primary-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-primary-600  w-full'>
             Alla lekar
           </a>
         </Link>
         <Link href='/static/roliglek/pyssel/paper-doll-chain-sjojungfrur.pdf'>
-          <a target="_blank" rel="noopener noreferrer" className='block text-center bg-pink-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-sky-500  w-full'>
+          <a target="_blank" rel="noopener noreferrer" className='block text-center bg-pink-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-pink-600  w-full'>
             Veckans PDF
           </a>
         </Link>

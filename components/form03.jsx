@@ -4,13 +4,13 @@ import React from "react";
 
 const Form03 = () => {
   return (
-    <div className="mx-auto">
+    <div className="">
       <div className="pb-1 text-lg font-semibold text-gray-800 justify-center items-center dark:text-gray-100">
-        Prenumerera på nyhetsbrevet
+        Håll dig uppdaterad, få nyhetsbrevet direkt i din mejlbox
       </div>
       <script src="https://f.convertkit.com/ckjs/ck.5.js" />
       <form
-        className="flex flex-col sm:flex-row"
+        className=" "
         action="https://app.convertkit.com/forms/3344817/subscriptions"
         method="post"
         data-sv-form="3344817"
@@ -31,10 +31,10 @@ const Form03 = () => {
             type="email"
           />
         </div>
-        <div className="flex w-full mt-2 rounded-md shadow-sm sm:mt-0 sm:ml-3">
+        <div className=" w-full mt-2 rounded-md shadow-sm  ">
           <button
             data-element="submit"
-            className="py-2 sm:py-0 w-full bg-primary-500 px-4 rounded-md font-medium text-white hover:bg-primary-700 dark:hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 dark:ring-offset-black"
+            className="py-2 w-full bg-primary-500 px-4 rounded-md font-medium text-white hover:bg-primary-600 dark:hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 dark:ring-offset-black"
           >
             <span className="">Börja prenumerera</span>
           </button>
