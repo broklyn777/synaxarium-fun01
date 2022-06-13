@@ -27,7 +27,23 @@ export default function omoss() {
               På Roliglek hittar du massor av lekar för olika åldrar. Beskrivningarna innehåller instruktioner steg- för steg och illustrativa bilder så att du enkelt kan skapa din egen roliga lek
             </p>
           </div>
+
+
+          <div className='w-full'>
+            <Image
+              src="/static/roliglek/2021/playground-removebg.png"
+              alt="bild på roliglek "
+              className=""
+              width={600}
+              height={400}
+              layout=""
+              quality={100}
+              priority
+              loading="eager"
+            />
+          </div>
           <div className='grid grid-cols-2'>
+
             <div className='w-full'>
               <Image
                 src="/static/roliglek/pyssel/Cartoon Girl Meghan Jumping On Trampoline.H02.watermarked.2k.png"

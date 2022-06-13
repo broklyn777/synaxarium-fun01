@@ -10,7 +10,7 @@ export default function Post({ post, compact }) {
     //  blogslug
     // ändrat bg-white
     <Link href={`/lek/${post.slug}`} passHref>
-      <div className='w-full  rounded-md bg-white pt-0 border-b-2 cursor-pointer shadow-lg mt-2'>
+      <div className='w-full rounded-md bg-white pt-0 pb-2 border-b-2 cursor-pointer shadow-lg mt-2'>
         {!compact && (
 
           // ändrat height width 420- 600, fanns ingen objectFit=""
@@ -24,7 +24,7 @@ export default function Post({ post, compact }) {
           />
         )}
 
-        <div className="p-1 px-1" >
+        <div className="px-2" >
           <div className='flex justify-between items-center tracking-tight'>
 
             <CategoryLabel>{post.frontmatter.category}</CategoryLabel>
@@ -32,9 +32,9 @@ export default function Post({ post, compact }) {
 
 
 
-          <div className='mt-2'>
+          <div className='mt-2 '>
 
-            <h2 className='text-xl text-gray-700 pb-1 font-semibold hover:underline decoration-primary-500'>
+            <h2 className='text-xl text-gray-700 pb-1 font-semibold '>
               {post.frontmatter.title}
             </h2>
 

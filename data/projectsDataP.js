@@ -7,14 +7,14 @@ const projectsData = [
   },
   {
     title: 'Paper chain sjöjungfru',
-    description: ` Paper doll chains, eller pappersdockor som kanske är det svenska ordet som ligger närmst till hands, är kul att göra, för när man klippt klart och vecklar ut dockan så får man flera dockor på rad!`,
+    description: ` Paper doll chains, eller pappersdockor som kanske är det svenska ordet som ligger närmst till hands, är kul att göra, `,
     imgSrc: '/static/roliglek/pyssel/sjojungfru04.jpeg',
     href: '/pyssel/paper-doll-chain-sjojungfru',
   },
 
   {
     title: 'Glassar till glasskiosken',
-    description: ` Paper doll chains, eller pappersdockor som kanske är det svenska ordet som ligger närmst till hands, är kul att göra, för när man klippt klart och vecklar ut dockan så får man flera dockor på rad!`,
+    description: ` Paper doll chains, eller pappersdockor som kanske är det svenska ordet som ligger närmst till hands.`,
     imgSrc: '/static/roliglek/pyssel/glassar-front6-520x400.jpeg',
     href: '/pyssel/paper-doll-chain-sjojungfru',
   },

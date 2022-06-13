@@ -1,10 +1,11 @@
 
-import CardPyssel from '@/components/CardPyssel'
+import Card2 from '@/components/Card2'
 import Form03 from '@/components/form03'
 import Hero from '@/components/Hero'
 //  blogslug
 import Layout from '@/components/Layout'
 import Post from '@/components/Post'
+import projectsDataP from '@/data/projectsDataP'
 import { getPosts } from '@/lib/posts'
 import Link from 'next/link'
 
@@ -16,10 +17,6 @@ export default function HomePage({ posts }) {
       <div className="flex items-center justify-center pt-4">
         <Form03 />
       </div>
-
-
-
-
 
       <Layout>
         <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
@@ -41,7 +38,24 @@ export default function HomePage({ posts }) {
           </a>
         </Link>
         <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste pyssel</h1>
-        <CardPyssel />
+
+        <div className=" grid md:grid-cols-2  lg:grid-cols-3 md:gap-5">
+          {projectsDataP.map((d) => (
+            <Card2
+              key={d.title}
+              title={d.title}
+              description={d.description}
+              imgSrc={d.imgSrc}
+              href={d.href}
+            />
+          ))}
+        </div>
+        {/* <div className='container mx-auto grid md:grid-cols-2 w-full lg:grid-cols-3 md:gap-5'>
+          <CardPyssel />
+
+        </div> */}
+
+        {/* <CardTest /> */}
       </Layout>
 
     </>

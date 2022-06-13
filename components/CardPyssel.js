@@ -4,11 +4,8 @@ import projectsDataP from '@/data/projectsDataP'
 export default function CardPyssel() {
     return (
         <>
-
-
-
             <div className="container py-12">
-                <div className=" flex flex-wrap">
+                <div className="-m-4 flex flex-wrap">
                     {projectsDataP.map((d) => (
                         <CardP
                             key={d.title}
@@ -21,6 +18,24 @@ export default function CardPyssel() {
                 </div>
             </div>
 
+
+            {/* 
+
+            {projectsDataP.map((d) => (
+                <CardP
+
+                    key={d.title}
+                    title={d.title}
+                    description={d.description}
+                    imgSrc={d.imgSrc}
+                    href={d.href}
+                />
+            ))} */}
+
+
+
         </>
     )
 }
+
+
