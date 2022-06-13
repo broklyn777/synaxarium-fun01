@@ -29,76 +29,36 @@ export default function omoss() {
           </div>
 
 
-          <div className='w-full'>
-            <Image
-              src="/static/roliglek/2021/playground-removebg.png"
-              alt="bild på roliglek "
-              className=""
-              width={600}
-              height={400}
-              layout=""
-              quality={100}
-              priority
-              loading="eager"
-            />
-          </div>
-          <div className='grid grid-cols-2'>
 
-            <div className='w-full'>
-              <Image
-                src="/static/roliglek/pyssel/Cartoon Girl Meghan Jumping On Trampoline.H02.watermarked.2k.png"
-                alt="bild på roliglek "
-                className=""
-                width={600}
-                height={600}
-                layout=""
-                quality={100}
-                priority
-                loading="eager"
-              />
+
+
+          <div className="  flex flex-col justify-center items-center">
+            <div className=" mx-2   h-full bg-blue-500 rounded-xl bg-texture bg-cover bg-center bg-blend-color-burn">
+              {/* <p className="p-8  text-lg  uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px" >På Roliglek hittar du massor av lekar för olika åldrar. </p> */}
+              <h3 className="p-8  w-full text-6xl font-black uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px">Vi älskar rörelse och glädje!  </h3>
             </div>
-            <div className=' w-full'>
-              <Image
-                src="/static/roliglek/pyssel/Cartoon Boy Harry Holding Balloons.I01.watermarked.2k.png"
-                alt="bild på roliglek "
-                className=""
-                width={600}
-                height={600}
-                layout=""
-                quality={100}
-                priority
-                loading="eager"
-              />
-            </div>
-            <div className='w-full'>
-              <Image
-                src="/static/roliglek/pyssel/Cartoon Boy Harry Playing Soccer.J02.watermarked.2k.png"
-                alt="bild på roliglek "
-                className=""
-                width={600}
-                height={600}
-                layout=""
-                quality={100}
-                priority
-                loading="eager"
-              />
-            </div>
-            <div className='flex flex-wrap w-full'>
+            <div className='-mt-64  '>
               <Image
                 src="/static/roliglek/pyssel/Cartoon Boy Harry Skateboarding.J15.watermarked.2k.png"
                 alt="bild på roliglek "
                 className=""
-                width={600}
-                height={600}
+                width={300}
+                height={300}
                 layout=""
                 quality={100}
                 priority
                 loading="eager"
               />
             </div>
-
-
           </div>
+
+
+
+
+
+
+
+
           <Grid />
 
           <div className="flex items-center justify-center pt-4">
