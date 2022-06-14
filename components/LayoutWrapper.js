@@ -25,10 +25,16 @@ const LayoutWrapper = ({ children }) => {
 
                   {/* <Logo /> */}
                 </div>
-                <h2 className='pl-5 font-semibold text-sky-500 text-4xl'>Rolig
+                <h2 className='pl-5 font-semibold text-sky-500 text-4xl'>
+                  <span className='text-primary-500'>R</span>
+                  <span className='text-pink-500'>o</span>
+                  <span className='text-yellow-500'>l</span>
+                  <span className='text-green-500'>i</span>
+                  <span className='text-primary-500'>g</span>
                   <span className='text-pink-500'>L</span>
                   <span className='text-yellow-500'>e</span>
                   <span className='text-green-500'>k</span>
+                  <span className='text-gray-300'>.se</span>
 
 
 
