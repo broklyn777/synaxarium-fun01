@@ -32,8 +32,8 @@ export default function omoss() {
 
 
           <div className=''>
-            <div className="  flex flex-col justify-center items-center">
-              <div className="relative w-full max-w-4xl h-[420px] bg-blue-500 rounded-xl bg-texture bg-cover bg-center bg-blend-color-burn">
+            <div className=" relative flex flex-col justify-center items-center">
+              <div className=" w-full max-w-4xl h-[420px] bg-blue-500 rounded-xl bg-texture bg-cover bg-center bg-blend-color-burn overflow-hidden">
                 {/* <p className="p-8  text-lg  uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px" >På Roliglek hittar du massor av lekar för olika åldrar. </p> */}
                 <h3 className="p-8  w-full text-4xl font-black uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px">Vi älskar rörelse och glädje!  </h3>
               </div>
