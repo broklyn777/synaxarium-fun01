@@ -35,7 +35,7 @@ export default function omoss() {
             <div className=" relative flex flex-col justify-center items-center">
               <div className=" w-full max-w-4xl h-[420px] bg-blue-500 rounded-xl bg-texture bg-cover bg-center bg-blend-color-burn overflow-hidden">
                 {/* <p className="p-8  text-lg  uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px" >På Roliglek hittar du massor av lekar för olika åldrar. </p> */}
-                <h3 className="p-8  w-full text-4xl font-black uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px">Vi älskar rörelse och glädje!  </h3>
+                <h3 className="p-8  w-2/3 text-4xl font-black uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px">Vi älskar rörelse och glädje!  </h3>
               </div>
               <div className='absolute -bottom-16 -right-8 '>
                 <Image
@@ -44,6 +44,21 @@ export default function omoss() {
 
                   width={350}
                   height={350}
+                  layout=""
+                  quality={100}
+                  priority
+                  loading="eager"
+                />
+
+
+              </div>
+              <div className='absolute -bottom-16 -left-6  '>
+                <Image
+                  src="/static/roliglek/2021/Meghan Riding Scooter.png"
+                  alt="bild på roliglek "
+
+                  width={300}
+                  height={300}
                   layout=""
                   quality={100}
                   priority
