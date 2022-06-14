@@ -31,24 +31,25 @@ export default function omoss() {
 
 
 
+          <div className=''>
+            <div className="  flex flex-col justify-center items-center">
+              <div className="relative w-full max-w-4xl h-[420px] bg-blue-500 rounded-xl bg-texture bg-cover bg-center bg-blend-color-burn">
+                {/* <p className="p-8  text-lg  uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px" >På Roliglek hittar du massor av lekar för olika åldrar. </p> */}
+                <h3 className="p-8  w-full text-4xl font-black uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px">Vi älskar rörelse och glädje!  </h3>
+              </div>
+              <div className='absolute -bottom-20 -right-8 '>
+                <Image
+                  src="/static/roliglek/pyssel/Cartoon Boy Harry Skateboarding.J15.watermarked.2k.png"
+                  alt="bild på roliglek "
 
-          <div className="  flex flex-col justify-center items-center">
-            <div className=" mx-2   h-full bg-blue-500 rounded-xl bg-texture bg-cover bg-center bg-blend-color-burn">
-              {/* <p className="p-8  text-lg  uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px" >På Roliglek hittar du massor av lekar för olika åldrar. </p> */}
-              <h3 className="p-8  w-full text-6xl font-black uppercase text-white transform -rotate-6 mix-blend-overlay filter blur-px">Vi älskar rörelse och glädje!  </h3>
-            </div>
-            <div className='-mt-64  '>
-              <Image
-                src="/static/roliglek/pyssel/Cartoon Boy Harry Skateboarding.J15.watermarked.2k.png"
-                alt="bild på roliglek "
-                className=""
-                width={300}
-                height={300}
-                layout=""
-                quality={100}
-                priority
-                loading="eager"
-              />
+                  width={350}
+                  height={350}
+                  layout=""
+                  quality={100}
+                  priority
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
 
@@ -58,8 +59,10 @@ export default function omoss() {
 
 
 
+          <section className='mt-40'>
+            <Grid />
 
-          <Grid />
+          </section>
 
           <div className="flex items-center justify-center pt-4">
             <Form03 />

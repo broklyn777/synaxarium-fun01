@@ -17,12 +17,9 @@ const Hero = () => {
           <h2 className="ml-2 text-center md:text-left text-4xl font-semibold font-display leading-tight sm:text-4xl sm:leading-none md:text-5xl lg:text-5xl xl:text-6xl">
             Välkommen <br /> till en ny leksida!
           </h2>
-          {/* <h2 className="ml-2 text-3xl font-extrabold font-display leading-tight sm:text-4xl sm:leading-none md:text-5xl lg:text-5xl xl:text-6xl">
-            Ha <span className='text-sky-500' >Roligt</span> pro
-          </h2> */}
+
         </div>
-        {/* <div aria-hidden="true" className="absolute rounded-full -z-50 right-[50px] -top-[50px]    w-[100px] h-[220px] lg:w-[150px] lg:-top-[160px] lg:h-[150px] bg-green-500 grid place-items-center">
-        </div> */}
+
 
         <div className='pl-4'>
           <p className="mt-2 text-center  text-lg md:text-left ">
