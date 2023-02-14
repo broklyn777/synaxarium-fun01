@@ -6,10 +6,9 @@ import CategoryLabel from './CategoryLabel'
 export default function Post({ post, compact }) {
   // console.log(post) bra console
   return (
-
     //  blogslug
     // ändrat bg-white
-    <Link href={`/lek/${post.slug}`} passHref>
+    <Link href={`/lek/${post.slug}`} passHref legacyBehavior>
       <div className='w-full rounded-md bg-white pt-0 pb-2 border-b-2 cursor-pointer shadow-lg mt-2'>
         {!compact && (
 
@@ -44,6 +43,5 @@ export default function Post({ post, compact }) {
         </div>
       </div>
     </Link>
-
-  )
+  );
 }

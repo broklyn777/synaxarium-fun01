@@ -6,7 +6,6 @@ import { serialize } from 'next-mdx-remote/serialize'
 import { NextSeo } from 'next-seo'
 // import Link from 'next/link'
 // import Image from 'next/image'
-import Image from 'next/image'
 import path from 'path'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { Button, Nav } from '../../components'
@@ -45,12 +44,12 @@ const PostPage = ({ frontMatter: { title, description, date }, mdxSource }) => {
 
                   <li className="flex items-center space-x-2">
 
-                    <Image
+                    {/* <Image
                       src="/static/roliglek/2021/avatar-rl.png"
                       width="38px"
                       height="38px"
                       alt="avatar"
-                      className="h-10 w-10 rounded-full" />
+                      className="h-10 w-10 rounded-full" /> */}
 
                     <div className="whitespace-nowrap text-sm font-medium leading-5">
                       {/* <dt className="sr-only">Namn</dt> */}

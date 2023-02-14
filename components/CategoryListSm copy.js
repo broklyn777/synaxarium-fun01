@@ -29,13 +29,13 @@ export default function CategoryListSm({ categories }) {
         {categories.map((category, index) => (
 
           // eslint-disable-next-line @next/next/link-passhref
-          <Link key={index} href={`/lek/category/${category()}`}>
+          <Link key={index} href={`/lek/category/${category()}`} legacyBehavior>
             <li className='p-4 cursor-pointer hover:bg-gray-50'>{category}</li>
 
           </Link>
         ))}
       </ul>
     </div>
-  )
+  );
 }
 // tolowercase

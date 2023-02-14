@@ -86,7 +86,7 @@ const EmailCTA = ({
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default EmailCTA

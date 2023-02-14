@@ -11,60 +11,64 @@ import Link from 'next/link'
 
 
 export default function HomePage({ posts }) {
-  return (
-    <>
-      <Hero />
+  return <>
+    <Hero />
 
-      <Layout>
-        <div className='sm:px-14 sm:py-8'>
-          <div className=" items-center justify-center bg-gray-100 p-6 w-96 mx-auto  ">
+    <Layout>
+      <div className='sm:px-14 sm:py-8'>
+        <div className=" items-center justify-center bg-gray-100 p-6 w-96 mx-auto  ">
 
-            <Form03 />
+          <Form03 />
 
 
-          </div>
         </div>
-        <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
+      </div>
+      <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste Lekar</h1>
 
-        <div className='grid md:grid-cols-2  lg:grid-cols-3 md:gap-5'>
-          {posts.map((post, index) => (
-            <Post key={index} post={post} />
-          ))}
-        </div>
-        {/* blogslug */}
-        <Link href='/lek'>
-          <a className='block text-center bg-primary-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-primary-600  w-full'>
-            Alla lekar
-          </a>
-        </Link>
-        <Link href='/static/roliglek/pyssel/paper-doll-chain-sjojungfrur.pdf'>
-          <a target="_blank" rel="noopener noreferrer" className='block text-center bg-pink-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-pink-600  w-full'>
-            Veckans PDF
-          </a>
-        </Link>
-        <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste pyssel</h1>
+      <div className='grid md:grid-cols-2  lg:grid-cols-3 md:gap-5'>
+        {posts.map((post, index) => (
+          <Post key={index} post={post} />
+        ))}
+      </div>
+      {/* blogslug */}
+      <Link
+        href='/lek'
+        className='block text-center bg-primary-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-primary-600  w-full'>
+        
+          Alla lekar
+        
+      </Link>
+      <Link
+        href='/static/roliglek/pyssel/paper-doll-chain-sjojungfrur.pdf'
+        target="_blank"
+        rel="noopener noreferrer"
+        className='block text-center bg-pink-500 text-white text-2xl font-bold rounded-md py-2 my-5  hover:text-white hover:bg-pink-600  w-full'>
+        
+          Veckans PDF
+        
+      </Link>
+      <h1 className='text-5xl border-b-4  p-5 font-semibold'>Senaste pyssel</h1>
 
-        <div className=" grid md:grid-cols-2  lg:grid-cols-3 md:gap-5">
-          {projectsDataP.map((d) => (
-            <Card2
-              key={d.title}
-              title={d.title}
-              description={d.description}
-              imgSrc={d.imgSrc}
-              href={d.href}
-            />
-          ))}
-        </div>
-        {/* <div className='container mx-auto grid md:grid-cols-2 w-full lg:grid-cols-3 md:gap-5'>
-          <CardPyssel />
+      <div className=" grid md:grid-cols-2  lg:grid-cols-3 md:gap-5">
+        {projectsDataP.map((d) => (
+          <Card2
+            key={d.title}
+            title={d.title}
+            description={d.description}
+            imgSrc={d.imgSrc}
+            href={d.href}
+          />
+        ))}
+      </div>
+      {/* <div className='container mx-auto grid md:grid-cols-2 w-full lg:grid-cols-3 md:gap-5'>
+        <CardPyssel />
 
-        </div> */}
+      </div> */}
 
-        {/* <CardTest /> */}
-      </Layout>
+      {/* <CardTest /> */}
+    </Layout>
 
-    </>
-  )
+  </>;
 }
 
 export async function getStaticProps() {

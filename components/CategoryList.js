@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 //  blogslug
 export default function CategoryList({ categories }) {
@@ -9,13 +10,16 @@ export default function CategoryList({ categories }) {
       <ul className='divide-y divide-gray-300'>
         {categories.map((category, index) => (
 
-          // eslint-disable-next-line @next/next/link-passhref
-          <Link key={index} href={`/lek/category/${category.toLowerCase()}`}>
+
+          <Link
+            key={index}
+            href={`/lek/category/${category.toLowerCase()}`}
+            legacyBehavior>
             <li className='p-4 cursor-pointer hover:bg-gray-50'>{category}</li>
 
           </Link>
         ))}
       </ul>
     </div>
-  )
+  );
 }

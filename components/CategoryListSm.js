@@ -5,7 +5,7 @@ export default function CategoryListSm({ categories }) {
   // console.log(categories)
   return (
     <div className=' w-full p-2 border-y-2    mt-2'>
-      <Link href="/lek" passHref>
+      <Link href="/lek" passHref legacyBehavior>
         <h1 className='text-3xl text-center  font-bold pt-2 cursor-pointer  text-primary-500  rounded'>
           Alla lekar
         </h1>
@@ -16,7 +16,10 @@ export default function CategoryListSm({ categories }) {
         {categories.map((category, index) => (
 
           // eslint-disable-next-line @next/next/link-passhref
-          <Link key={index} href={`/lek/category/${category.toLowerCase()}`}>
+          <Link
+            key={index}
+            href={`/lek/category/${category.toLowerCase()}`}
+            legacyBehavior>
             <li className='list-none px-0 py-1 bg-pink-500 text-white rounded-md cursor-pointer hover:bg-primary-500'>{category}</li>
 
           </Link>
@@ -24,7 +27,7 @@ export default function CategoryListSm({ categories }) {
       </div>
 
     </div>
-  )
+  );
 }
 
 

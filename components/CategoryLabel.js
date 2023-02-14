@@ -20,8 +20,10 @@ export default function CategoryLabel({ children }) {
       className={`px-2 py-1 bg-${colorKey[children]}-600 text-gray-100 font-semibold rounded`}
     >
 
-      <Link href={`/lek/category/${children.toString().toLowerCase()}`}>{children}</Link>
+      <Link
+        href={`/lek/category/${children.toString().toLowerCase()}`}
+        legacyBehavior>{children}</Link>
     </div>
-  )
+  );
 }
 // tolowercase
